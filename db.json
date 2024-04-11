@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "task": "go to sleep",
+      "created_at": 1712656355408,
+      "id": 1712656355408,
+      "is_completed": true,
+      "is_deleted": true
+    },
+    {
+      "task": "go home",
+      "created_at": 1712656361271,
+      "id": 1712656361271,
+      "is_completed": false,
+      "is_deleted": true
+    },
+    {
+      "task": "di ve thoi!!!",
+      "created_at": 1712656919279,
+      "id": 1712656919279,
+      "is_completed": false,
+      "is_deleted": false
+    },
+    {
+      "task": "go to sleep",
+      "created_at": 1712734697432,
+      "id": 1712734697432,
+      "is_completed": false,
+      "is_deleted": true
+    },
+    {
+      "task": "go to sleep",
+      "created_at": 1712734707164,
+      "id": 1712734707164,
+      "is_completed": false,
+      "is_deleted": false
+    }
+  ]
+}

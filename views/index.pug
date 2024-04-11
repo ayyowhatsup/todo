@@ -1,0 +1,23 @@
+html
+  head
+    link(rel='stylesheet' href="/stylesheets/style.css")
+    script(src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous")
+  body
+    .container 
+        .todo-app 
+            .app-title 
+                h2 To-do app 
+            .row 
+                form(action='' method='post')
+                    input#input-box(type='text' placeholder='add your task' name='task')
+                    button Add 
+            ul#list-container 
+                if todos.length > 0
+                    each todo in todos
+                        li(class=todo.is_completed ? 'checked' : '')=todo.task
+                            form(method='post' action=`/todo/${todo.id}/completed`)
+                            span.delete X
+                                form(method='post' action=`/todo/${todo.id}/delete`)
+    script(src="/javascripts/script.js")

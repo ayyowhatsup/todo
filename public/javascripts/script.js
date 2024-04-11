@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('li').each(function(){
+        $(this).click(function(){
+            $(this).find($('form')).first().submit()
+        })
+    })
+    $('.delete').each(function(){
+        $(this).click(function(e){
+            e.stopPropagation()
+            $(this).find($('form')).first().submit()
+        })
+    })
+})
